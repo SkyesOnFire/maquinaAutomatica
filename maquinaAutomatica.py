@@ -22,7 +22,7 @@ acaiEstoque = 7
 dezPapel = 11
 cincoPapel = 15
 doisPapel = 22
-umReal = 87
+umReal = 65
 cinquentaCentavos = 55
 vinteCincoCentavos = 52
 dezCentavos = 32
@@ -222,21 +222,53 @@ while True:                                         #Repeticao para o usuario fa
                     if errofatal == 1:
                         break
                     while troco >= 0.5:
-                        troco -= 0.5
-                        cinquentaCentavos -= 1
-                        print("*Cai uma moeda de 50 centavos da máquina*")
+                        if cinquentaCentavos >= 1:
+                            troco -= 0.5
+                            cinquentaCentavos -= 1
+                            print("*Cai uma moeda de 50 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.25:
-                        troco -= 0.25
-                        vinteCincoCentavos -= 1
-                        print("*Cai uma moeda de 25 centavos da máquina*")
+                        if vinteCincoCentavos >= 1:
+                            troco -= 0.25
+                            vinteCincoCentavos -= 1
+                            print("*Cai uma moeda de 25 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.1:
-                        troco -= 0.1
-                        dezCentavos -= 1
-                        print("*Cai uma moeda de 10 centavos da máquina*")
+                        if dezCentavos >= 1:
+                            troco -= 0.1
+                            dezCentavos -= 1
+                            print("*Cai uma moeda de 10 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.05:
-                        troco -= 0.05
-                        cincoCentavos -= 1
-                        print("*Cai uma moeda de 5 centavos da máquina*")
+                        if cincoCentavos >= 1:
+                            troco -= 0.05
+                            cincoCentavos -= 1
+                            print("*Cai uma moeda de 5 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     cocaEstoque -= 1
                     input("\nPressione Enter para pegar suas moedas e sua bebida.")
                 elif dinheiroInserido < cocaValor:
@@ -256,7 +288,7 @@ while True:                                         #Repeticao para o usuario fa
                     while dinheiroInserido >= 0.1:
                         dinheiroInserido -= 0.1
                         dezCentavos -= 1
-                        print("*Cai uma moeda de 10 centavos da máquina*")
+                        print("*Cai uma moedaz de 10 centavos da máquina*")
                     while dinheiroInserido >= 0.05:
                         dinheiroInserido -= 0.05
                         cincoCentavos -= 1
@@ -414,21 +446,53 @@ while True:                                         #Repeticao para o usuario fa
                     if errofatal == 1:
                         break
                     while troco >= 0.5:
-                        troco -= 0.5
-                        cinquentaCentavos -= 1
-                        print("*Cai uma moeda de 50 centavos da máquina*")
+                        if cinquentaCentavos >= 1:
+                            troco -= 0.5
+                            cinquentaCentavos -= 1
+                            print("*Cai uma moeda de 50 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.25:
-                        troco -= 0.25
-                        vinteCincoCentavos -= 1
-                        print("*Cai uma moeda de 25 centavos da máquina*")
+                        if vinteCincoCentavos >= 1:
+                            troco -= 0.25
+                            vinteCincoCentavos -= 1
+                            print("*Cai uma moeda de 25 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.1:
-                        troco -= 0.1
-                        dezCentavos -= 1
-                        print("*Cai uma moeda de 10 centavos da máquina*")
+                        if dezCentavos >= 1:
+                            troco -= 0.1
+                            dezCentavos -= 1
+                            print("*Cai uma moeda de 10 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.05:
-                        troco -= 0.05
-                        cincoCentavos -= 1
-                        print("*Cai uma moeda de 5 centavos da máquina*")
+                        if cincoCentavos >= 1:
+                            troco -= 0.05
+                            cincoCentavos -= 1
+                            print("*Cai uma moeda de 5 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     aguaEstoque -= 1
                     input("\nPressione Enter para pegar suas moedas e sua bebida.")
                 elif dinheiroInserido < aguaValor:
@@ -605,21 +669,53 @@ while True:                                         #Repeticao para o usuario fa
                     if errofatal == 1:
                         break
                     while troco >= 0.5:
-                        troco -= 0.5
-                        cinquentaCentavos -= 1
-                        print("*Cai uma moeda de 50 centavos da máquina*")
+                        if cinquentaCentavos >= 1:
+                            troco -= 0.5
+                            cinquentaCentavos -= 1
+                            print("*Cai uma moeda de 50 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.25:
-                        troco -= 0.25
-                        vinteCincoCentavos -= 1
-                        print("*Cai uma moeda de 25 centavos da máquina*")
+                        if vinteCincoCentavos >= 1:
+                            troco -= 0.25
+                            vinteCincoCentavos -= 1
+                            print("*Cai uma moeda de 25 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.1:
-                        troco -= 0.1
-                        dezCentavos -= 1
-                        print("*Cai uma moeda de 10 centavos da máquina*")
+                        if dezCentavos >= 1:
+                            troco -= 0.1
+                            dezCentavos -= 1
+                            print("*Cai uma moeda de 10 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.05:
-                        troco -= 0.05
-                        cincoCentavos -= 1
-                        print("*Cai uma moeda de 5 centavos da máquina*")
+                        if cincoCentavos >= 1:
+                            troco -= 0.05
+                            cincoCentavos -= 1
+                            print("*Cai uma moeda de 5 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     acaiEstoque -= 1
                     input("\nPressione Enter para pegar suas moedas e sua bebida.")
                 elif dinheiroInserido < acaiValor:
@@ -796,21 +892,53 @@ while True:                                         #Repeticao para o usuario fa
                     if errofatal == 1:
                         break
                     while troco >= 0.5:
-                        troco -= 0.5
-                        cinquentaCentavos -= 1
-                        print("*Cai uma moeda de 50 centavos da máquina*")
+                        if cinquentaCentavos >= 1:
+                            troco -= 0.5
+                            cinquentaCentavos -= 1
+                            print("*Cai uma moeda de 50 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.25:
-                        troco -= 0.25
-                        vinteCincoCentavos -= 1
-                        print("*Cai uma moeda de 25 centavos da máquina*")
+                        if vinteCincoCentavos >= 1:
+                            troco -= 0.25
+                            vinteCincoCentavos -= 1
+                            print("*Cai uma moeda de 25 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.1:
-                        troco -= 0.1
-                        dezCentavos -= 1
-                        print("*Cai uma moeda de 10 centavos da máquina*")
+                        if dezCentavos >= 1:
+                            troco -= 0.1
+                            dezCentavos -= 1
+                            print("*Cai uma moeda de 10 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.05:
-                        troco -= 0.05
-                        cincoCentavos -= 1
-                        print("*Cai uma moeda de 5 centavos da máquina*")
+                        if cincoCentavos >= 1:
+                            troco -= 0.05
+                            cincoCentavos -= 1
+                            print("*Cai uma moeda de 5 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     pepsiEstoque -= 1
                     input("\nPressione Enter para pegar suas moedas e sua bebida.")
                 elif dinheiroInserido < pepsiValor:
@@ -987,21 +1115,53 @@ while True:                                         #Repeticao para o usuario fa
                     if errofatal == 1:
                         break
                     while troco >= 0.5:
-                        troco -= 0.5
-                        cinquentaCentavos -= 1
-                        print("*Cai uma moeda de 50 centavos da máquina*")
+                        if cinquentaCentavos >= 1:
+                            troco -= 0.5
+                            cinquentaCentavos -= 1
+                            print("*Cai uma moeda de 50 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.25:
-                        troco -= 0.25
-                        vinteCincoCentavos -= 1
-                        print("*Cai uma moeda de 25 centavos da máquina*")
+                        if vinteCincoCentavos >= 1:
+                            troco -= 0.25
+                            vinteCincoCentavos -= 1
+                            print("*Cai uma moeda de 25 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.1:
-                        troco -= 0.1
-                        dezCentavos -= 1
-                        print("*Cai uma moeda de 10 centavos da máquina*")
+                        if dezCentavos >= 1:
+                            troco -= 0.1
+                            dezCentavos -= 1
+                            print("*Cai uma moeda de 10 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.05:
-                        troco -= 0.05
-                        cincoCentavos -= 1
-                        print("*Cai uma moeda de 5 centavos da máquina*")
+                        if cincoCentavos >= 1:
+                            troco -= 0.05
+                            cincoCentavos -= 1
+                            print("*Cai uma moeda de 5 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     guaranaEstoque -= 1
                     input("\nPressione Enter para pegar suas moedas e sua bebida.")
                 elif dinheiroInserido < guaranaValor:
@@ -1178,21 +1338,53 @@ while True:                                         #Repeticao para o usuario fa
                     if errofatal == 1:
                         break
                     while troco >= 0.5:
-                        troco -= 0.5
-                        cinquentaCentavos -= 1
-                        print("*Cai uma moeda de 50 centavos da máquina*")
+                        if cinquentaCentavos >= 1:
+                            troco -= 0.5
+                            cinquentaCentavos -= 1
+                            print("*Cai uma moeda de 50 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.25:
-                        troco -= 0.25
-                        vinteCincoCentavos -= 1
-                        print("*Cai uma moeda de 25 centavos da máquina*")
+                        if vinteCincoCentavos >= 1:
+                            troco -= 0.25
+                            vinteCincoCentavos -= 1
+                            print("*Cai uma moeda de 25 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.1:
-                        troco -= 0.1
-                        dezCentavos -= 1
-                        print("*Cai uma moeda de 10 centavos da máquina*")
+                        if dezCentavos >= 1:
+                            troco -= 0.1
+                            dezCentavos -= 1
+                            print("*Cai uma moeda de 10 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.05:
-                        troco -= 0.05
-                        cincoCentavos -= 1
-                        print("*Cai uma moeda de 5 centavos da máquina*")
+                        if cincoCentavos >= 1:
+                            troco -= 0.05
+                            cincoCentavos -= 1
+                            print("*Cai uma moeda de 5 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     mateleaoEstoque -= 1
                     input("\nPressione Enter para pegar suas moedas e sua bebida.")
                 elif dinheiroInserido < mateleaoValor:
@@ -1369,21 +1561,53 @@ while True:                                         #Repeticao para o usuario fa
                     if errofatal == 1:
                         break
                     while troco >= 0.5:
-                        troco -= 0.5
-                        cinquentaCentavos -= 1
-                        print("*Cai uma moeda de 50 centavos da máquina*")
+                        if cinquentaCentavos >= 1:
+                            troco -= 0.5
+                            cinquentaCentavos -= 1
+                            print("*Cai uma moeda de 50 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.25:
-                        troco -= 0.25
-                        vinteCincoCentavos -= 1
-                        print("*Cai uma moeda de 25 centavos da máquina*")
+                        if vinteCincoCentavos >= 1:
+                            troco -= 0.25
+                            vinteCincoCentavos -= 1
+                            print("*Cai uma moeda de 25 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.1:
-                        troco -= 0.1
-                        dezCentavos -= 1
-                        print("*Cai uma moeda de 10 centavos da máquina*")
+                        if dezCentavos >= 1:
+                            troco -= 0.1
+                            dezCentavos -= 1
+                            print("*Cai uma moeda de 10 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     while troco >= 0.05:
-                        troco -= 0.05
-                        cincoCentavos -= 1
-                        print("*Cai uma moeda de 5 centavos da máquina*")
+                        if cincoCentavos >= 1:
+                            troco -= 0.05
+                            cincoCentavos -= 1
+                            print("*Cai uma moeda de 5 centavos da máquina*")
+                        else:
+                            print("\nAcabou o troco da máquina favor contactar administrador.")
+                            input("Desculpe pelo transtorno! Pressione Enter para continuar.\n")
+                            errofatal = 1
+                            break
+                    if errofatal == 1:
+                        break
                     energeticoEstoque -= 1
                     input("\nPressione Enter para pegar suas moedas e sua bebida.")
                 elif dinheiroInserido < energeticoValor:
